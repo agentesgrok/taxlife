@@ -45,6 +45,8 @@ async function main() {
   }
   const result = await COMMANDS[cmd](args);
   console.log(JSON.stringify(result, null, 2));
+  // healthcheck/normalize devolvem { ok:false } em vez de lançar — refletir no exit code
+  if (result && result.ok === false) process.exit(1);
 }
 
 main().catch(err => {
