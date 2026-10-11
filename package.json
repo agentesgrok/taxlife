@@ -1,0 +1,16 @@
+{
+  "name": "taxlife-scraper",
+  "version": "0.1.0",
+  "description": "Scraper (Puppeteer) da plataforma TaxLife — Comunidade O Novo Tributário: login, inventário, extração de cursos e normalização em Markdown.",
+  "main": "src/index.js",
+  "bin": { "taxlife-scraper": "cli.js" },
+  "scripts": {
+    "login-test": "node cli.js login-test"
+  },
+  "engines": { "node": ">=20.12" },
+  "dependencies": {
+    "puppeteer": "^23.0.0"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
